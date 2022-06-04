@@ -7,11 +7,15 @@ const gameBot = function () {
     return function () {
         let userNumber = prompt('Угадай число от 1 до 100');
 
+        const isNumber = function(num) {
+           return !isNaN(num) && /\s/g.test(num) && isFinite(num)
+        }
+
         if (userNumber === null) {
             alert('Игра окончена')
             return
 
-        } else if (isNaN(userNumber)) {
+        } else if (isNumber(userNumber)) {
             alert('Введи число!')
             game();
         }
