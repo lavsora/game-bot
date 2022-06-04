@@ -3,7 +3,7 @@
 let game;
 
 const gameBot = function () {
-    let gameNumber = Math.round(Math.random() * 100)
+    let gameNumber = Math.round(Math.random()*100)
     return function () {
         let userNumber = prompt('Угадай число от 1 до 100');
 
@@ -22,7 +22,7 @@ const gameBot = function () {
             alert('Загаданное число меньше');
             game();
         } else if (+userNumber < gameNumber) {
-            alert('Загаданное число меньше');
+            alert('Загаданное число больше');
             game();
         }
     }
