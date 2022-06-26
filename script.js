@@ -12,8 +12,9 @@ const gameBot = () => {
             return
         }
 
-        if (isNaN(userNumber)) {
+        if (!/\d/g.test(userNumber)) {
             alert('Ошибка! Введите число!')
+            return game();
         }
 
         if (attempt === 0) {
