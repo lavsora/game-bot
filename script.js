@@ -30,7 +30,6 @@ const gameBot = () => {
 
         attempt--;
 
-
         if (+userNumber === gameNumber) {
             let questionWin = confirm('Поздравляю, Вы угадали!!! \nЗагаданное число: ' + gameNumber + ' \nХотели бы сыграть еще?');
 
