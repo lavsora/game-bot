@@ -40,12 +40,10 @@ const gameBot = () => {
                 alert('До свидания. \nПриходите играть еще!')
                 return
             }
-            
+
         } else if (+userNumber > gameNumber) {
-            console.log(gameNumber)
             alert('Загаданное число меньше. \nОсталось попыток: ' + attempt);
         } else if (+userNumber < gameNumber) {
-            console.log(gameNumber)
             alert('Загаданное число больше. \nОсталось попыток: ' + attempt);
         }
 
