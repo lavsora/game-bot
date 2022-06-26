@@ -20,7 +20,7 @@ const gameBot = () => {
             let questionAttempt = confirm('Попытки закончились. \nХотите сыграть еще?')
 
             if (questionAttempt === true) {
-                gameBot();
+                return gameBot();
             } else {
                 alert('До свидания. \nПриходите играть еще!')
                 return
@@ -35,7 +35,7 @@ const gameBot = () => {
             let questionWin = confirm('Поздравляю, Вы угадали!!! \nЗагаданное число: ' + gameNumber + ' \nХотели бы сыграть еще?');
 
             if (questionWin === true) {
-                gameBot();
+                return gameBot();
             } else {
                 alert('До свидания. \nПриходите играть еще!')
                 return
@@ -47,7 +47,7 @@ const gameBot = () => {
             alert('Загаданное число больше. \nОсталось попыток: ' + attempt);
         }
 
-        game()
+        return game();
     }
 
     return game();
