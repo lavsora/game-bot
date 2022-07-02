@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: black;
+    font-family: 'Consolas', monospace;
+    color: rgba(0, 255, 0, 1);
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: .5rem;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-true-false {
+    background-color: rgba(0, 255, 0, 1);
+    font-weight: bold;
+    font-size: 1.5rem;
+    height: 3rem;
+    width: 5rem;
+    cursor: pointer;
+    margin-right: 1.5rem;
+}
+
+#prompt {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+#prompt input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: #0F0;
+    padding: 1rem .5rem;
+    font-size: inherit;
+    font-family: 'Consolas', monospace;
+    position: relative;
+}
+
+#prompt::before {
+    content: '> ';
+}
+
+#output {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#output .user {
+    color: rgba(0, 255, 0, 1);
+    font-weight: bold;
+}
