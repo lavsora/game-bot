@@ -3,7 +3,6 @@
 const text = document.querySelector('h1');
 const form = document.querySelector('#prompt');
 const input = document.querySelector('input');
-const btnStart = document.querySelector('#btn-start');
 const btnTrueFalse = document.querySelectorAll('.btn-true-false')
 
 let attempt = 10;
@@ -22,10 +21,10 @@ const game = () => {
 
     form.addEventListener('submit', (e) => {
         e.preventDefault()
-        
-        if(!(input.value === '')) {
+
+        if (!(input.value === '')) {
             gameBot(+input.value)
-    
+
             input.value = '';
         }
     });

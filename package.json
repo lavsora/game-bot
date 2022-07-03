@@ -1,0 +1,24 @@
+{
+  "name": "game-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build-desktop": "electron-packager . game-bot --platform=win32 --arch=x64"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lavsora/game-bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lavsora/game-bot/issues"
+  },
+  "homepage": "https://github.com/lavsora/game-bot#readme",
+  "devDependencies": {
+    "electron": "^19.0.7",
+    "electron-packager": "^15.5.1"
+  }
+}
